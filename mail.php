@@ -13,6 +13,10 @@ $body = "Title: $title \nName: $name \nEmail: $email \nText: $text";
 
 $pagetitle = "$sitename - $title";
 
-mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient"); 
+if(mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient")){
+    echo 'Your mail has been sent successfully.';
+} else{
+    echo 'Unable to send email. Please try again.';
+}
 
 ?>
