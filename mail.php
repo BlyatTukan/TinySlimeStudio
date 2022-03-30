@@ -11,12 +11,8 @@ $text = trim($_POST["text"]);
 
 $body = "Title: $title \nName: $name \nEmail: $email \nText: $text";
 
-$pagetitle = "$sitename - $title";
+$pagetitle = ".$sitename - .$title";
 
-if(mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient")){
-    echo 'Your mail has been sent successfully.';
-} else{
-    echo 'Unable to send email. Please try again.';
-}
+mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient")
 
 ?>
