@@ -1474,14 +1474,12 @@ menu bar
           transform: rotate(90deg);
   color: #fafafc;
   position: absolute;
-  overflow: hidden;
   top: 200px;
   opacity: 1;
   left: -62px;
   text-transform: uppercase;
   font-size: 11px;
   opacity: 1;
-  letter-spacing: 1px;
   font-weight: 500;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
