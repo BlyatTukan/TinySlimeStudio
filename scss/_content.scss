@@ -24,6 +24,7 @@ content
   box-shadow: $shadow-1;
   padding: 30px;
   margin-bottom: 30px;
+  border-radius: 1rem !important;
 
   &.art-fluid-card {
     height: calc(100% - 30px);
@@ -713,6 +714,7 @@ portfolio
     object-position: center;
     filter: brightness(85%) blur(0);
     transition: $tr-md;
+    border-radius: 1rem;
   }
 
   & .art-item-hover {

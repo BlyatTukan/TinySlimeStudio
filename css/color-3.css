@@ -1,4 +1,7 @@
 
+
+
+
 .art-link.art-color-link {
   color: #4ca274
 }
@@ -8,6 +11,7 @@
 }
 .art-btn {
   background: #4ca274;
+  border-radius: .5rem !important;
 }
 
 blockquote {
@@ -108,4 +112,52 @@ blockquote {
 
 .art-cirkle-progress path:last-child {
   stroke: #4ca274;
+}
+
+.art-card, .art-price, .art-service-icon-box{
+  border-radius: 1rem !important;
+}
+
+.art-testimonial{
+  border-radius: 1rem !important;
+  min-height: 250px;
+}
+
+.art-banner, .art-banner-overlay{
+  border-radius: 1rem 1rem 0 0!important;
+}
+.art-app-wrapper, .art-grid-item{
+  border-radius: 1rem !important;
+}
+.art-portfolio-item-frame img{
+  border-radius: 1rem !important;
+}
+.art-ls-social, .art-info-bar, .art-app-container{
+  border-radius: 0 0 0 1rem !important;
+}
+.art-item-description{
+  border-radius: 0 0 1rem 1rem !important;
+}
+.art-blog-card, .art-banner-back, .art-preloader{
+  border-radius: 1rem;
+}
+blockquote, .art-timeline-content{
+  border-radius: 1rem !important;
+}
+.testimonial-face-background{
+  background: #4ca274;
+}
+.testimonial-face-background h5{
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  padding: 14px 0px;
+}
+
+
+@media (max-width: 920px)
+{
+  .art-app-wrapper{
+    border-radius:  0 !important;
+  }
 }

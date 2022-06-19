@@ -1,15 +1,5 @@
 /* -------------------------------------------
 
-Name: 		Arter
-Version:  1.0
-Author:		Nazar Miller (millerDigitalDesign)
-Portfolio:  https://themeforest.net/user/millerdigitaldesign/portfolio?ref=MillerDigitalDesign
-
-p.s. I am available for Freelance hire (UI design, web development). mail: miller.themes@gmail.com
-
-------------------------------------------- */
-/*--------------------------------------------
-
 1. common
       - fonts
       - text defaults
@@ -91,13 +81,13 @@ common
 
 ------------------------------ */
 /* ----- fonts ----- */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 /* ----- text defaults ----- */
 body {
   color: #8c8c8e;
   font-size: 12px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: 300;
   letter-spacing: 0.5px;
   font-smooth: subpixel-antialiased;
@@ -113,7 +103,7 @@ h6 {
   font-weight: 700;
   color: #fafafc;
   margin-bottom: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Exo 2", sans-serif;
 }
 
 h1 {
@@ -1591,7 +1581,7 @@ content
 
 /* ----- typing code ----- */
 .art-code {
-  font-family: "Courier Prime", monospace;
+  font-family: "Source Code Pro", monospace;
   color: #fafafc;
 }
 .art-code i {
@@ -1617,14 +1607,14 @@ content
 .art-counter-frame .art-counter-box .art-counter {
   color: #FFC107;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 22px;
 }
 .art-counter-frame .art-counter-box .art-counter-plus {
   margin-left: 3px;
   color: #FFC107;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 22px;
 }
 
@@ -2341,6 +2331,7 @@ portfolio
 }
 .art-grid.art-grid-2-col .art-grid-item .art-portfolio-item-frame.art-horizontal {
   padding-bottom: 66.7%;
+  
 }
 .art-grid.art-grid-2-col .art-grid-item .art-portfolio-item-frame.art-vertical {
   padding-bottom: 140%;
@@ -2386,9 +2377,11 @@ portfolio
   -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
           box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
   margin-bottom: 30px;
+  border-radius: 1rem;
 }
 .art-project-cover .art-portfolio-item-frame {
   padding-bottom: 50%;
+  
 }
 
 .art-project-category {
