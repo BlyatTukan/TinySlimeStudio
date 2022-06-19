@@ -1215,9 +1215,12 @@ info bar
 /* ----- progresbar color ----- */
 .art-line-progress path:first-child {
   stroke: #191923;
+  height: 30px !important;
+  border-radius: 5px;
 }
 .art-line-progress path:last-child {
   stroke: #FFC107;
+  height: 30px !important;
 }
 
 .art-cirkle-progress path:first-child {
