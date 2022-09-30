@@ -2813,4 +2813,146 @@ html.is-animating .fade-left {
   }
 }
 
+
+/* Accordion */
+
+.accordion {
+  font-size: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.accordion-header,
+.accordion-body {
+  background: white;
+}
+
+.accordion-header {
+  padding: 1.5em 1.5em;
+  background: #4ca274;
+  color: white;
+  cursor: pointer;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  border-radius: 12px;
+  margin: 15px 0;
+  box-shadow: 2px 2px 8px 0 rgba(15, 15, 20, .6);
+}
+
+
+
+.accordion__item .accordion__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.accordion-header:hover {
+  background: #4ca274;
+  position: relative;
+  z-index: 5;
+}
+
+.accordion-body {
+  background: transparent;
+  display: none;
+}
+
+.accordion-body__contents {
+  padding: 1.5em 1.5em;
+  font-size: 0.85em;
+}
+
+.accordion__item.active:last-child .accordion-header {
+  border-radius: none;
+}
+
+.accordion:first-child > .accordion__item > .accordion-header {
+  border-bottom: 1px solid transparent;
+}
+
+.accordion__item > .accordion-header:after {
+  content: "➤";
+  font-family: IonIcons;
+  font-size: 1.2em;
+  float: right;
+  position: relative;
+  top: -2px;
+  transition: 0.3s all;
+  transform: rotate(90deg);
+}
+
+.accordion__item.active > .accordion-header:after {
+  transform: rotate(-90deg);
+}
+
+.accordion__item.active .accordion-header {
+  background: #4ca274;
+}
+
+.accordion__item .accordion__item .accordion-header {
+  background: #f1f1f1;
+  color: #353535;
+}
+
+.changelog {
+  list-style: none;
+  padding: 0;
+}
+.changelog .badge {
+  width: 90px;
+  margin-right: 10px;
+  border-radius: .20rem;
+  text-transform: uppercase;
+}
+.changelog li {
+  line-height: 2rem;
+  color: #f1f1f1;
+}
+
+.badge-green {
+  color: #fff;
+  background-color: #28a745;
+  box-shadow: 0px 0px 8px #28a745;
+}
+
+.badge-blue {
+  color: #fff;
+  background-color: #17a2b8;
+  box-shadow: 0px 0px 8px #17a2b8;
+}
+
+.badge-red {
+  color: #fff;
+  background-color: #dc3545;
+  box-shadow: 0px 0px 8px #dc3545;
+}
+
+.badge-yellow {
+  color: #17181c;
+  background-color: #FFD700;
+  box-shadow: 0px 0px 8px #FFD700;
+}
+
+.badge-purple {
+  color: #fff;
+  background-color: #a162f7;
+  box-shadow: 0px 0px 8px #a162f7;
+}
+
+.badge-orange {
+  color: #fff;
+  background-color: #ff6d00;
+  box-shadow: 0px 0px 8px #ff6d00;
+}
+
+code{
+  
+  color: #4ca274;
+  font-weight: 700;
+}
+
+
+
 /*# sourceMappingURL=style.css.map */
