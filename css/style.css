@@ -2830,7 +2830,7 @@ html.is-animating .fade-left {
 
 .accordion-header {
   padding: 1.5em 1.5em;
-  background: #4ca274;
+  background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
   color: white;
   cursor: pointer;
   font-size: 0.7em;
