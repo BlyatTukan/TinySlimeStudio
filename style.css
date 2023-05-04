@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.dark {
+    --background: #070707;
+    --text: #aaa;
+    --link: #fff;
+    --link-shadow: 1px 1px 8px #fff;
+    --command: green;
+    --error: darkred;
+}
+
+.midnight {
+    --background: #232834;
+    --text: #aaa;
+    --link: #2b6e92;
+    --link-shadow: 1px 1px 4px #2b6e9277;
+    --command: #fbd03c;
+    --error: #cc6a3e;
+}
+
+.light {
+    --background: #fff;
+    --text: #777;
+    --link: #000;
+    --link-shadow: 1px 1px 4px #00000077;
+    --command: blue;
+    --error: red;
+}
+
+.ultraviolet {
+    --background: #252525;
+    --text: #999;
+    --link: #a100c9;
+    --link-shadow: 1px 1px 4px #a100c9bb;
+    --command: #a100c9;
+    --error: #b6b60e;
+}
+
+.retro {
+    --background: #708028;
+    --text: #a0a840;
+    --link: #d0d058;
+    --link-shadow: 1px 1px 4px #d0d058;
+    --command: #405010;
+    --error: #405010;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background: var(--background);
+    color: var(--text);
+    text-transform: uppercase;
+}
+
+body {
+    margin: 1.5rem;
+}
+
+.title {
+    color: var(--command);
+}
+
+.comment {
+    color: var(--command);
+}
+
+.error {
+    color: var(--error);
+}
+
+.error a {
+    color: var(--error);
+    text-shadow: none;
+}
+
+p {
+    font-family: 'VT323', monospace;
+    letter-spacing: 2px;
+}
+
+a {
+    font-family: 'VT323', monospace;
+    letter-spacing: 2px;
+    color: var(--link);
+    text-shadow: var(--link-shadow)
+}
+
+span {
+    display: flex;
+}
+
+button {
+    background: none;
+    border: none;
+    font-family: 'VT323', monospace;
+    letter-spacing: 2px;
+    color: var(--link);
+    text-shadow: var(--link-shadow);
+    text-decoration: underline;
+    font-size: 1rem;
+}
