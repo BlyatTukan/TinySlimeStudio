@@ -100,3 +100,29 @@ button {
     text-decoration: underline;
     font-size: 1rem;
 }
+
+pre {
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    * {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    * {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title {
+        font-size: 4px;
+    }
+
+    * {
+        font-size: 6px;
+    }
+}
