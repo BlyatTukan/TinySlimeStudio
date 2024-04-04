@@ -1,0 +1,159 @@
+:root {
+    --bg-lv-1: #00000088;
+    --bg-lv-1-blur: 2px;
+
+    --bg-lv-2: #16161644;
+    --bg-lv-2-blur: 2px;
+
+    --shadow: 0px 0px 8px #00000088;
+    --shadow-hover: 0px 0px 12px #000000aa;
+}
+
+::-webkit-scrollbar {
+    height: 16px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #1a644e, #40985e);
+    border-radius: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #eee;
+    font-family: 'Cube Cavern';
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url(../Image/HellishBattleCover.webp);
+
+}
+
+
+
+/* NAVBAR SETTINGS */
+nav {
+    background-color: var(--bg-lv-1);
+    backdrop-filter: blur(var(--bg-lv-1-blur));
+
+    height: 5rem;
+    display: grid;
+    grid-template-columns: 5rem 1fr 11rem;
+    grid-template-rows: 5rem;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    box-shadow: var(--shadow);
+    padding-right: 1rem;
+}
+
+#logo_link {
+    height: 5rem;
+    width: 5rem;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#logo {
+    height: 5rem;
+    width: 5rem;
+    background-size: cover;
+    filter: drop-shadow(var(--shadow));
+}
+
+#nav_name {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#nav_name #nav_name {
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+#nav_name #nav_desc {
+    font-size: 1rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+    color: #aaa;
+    padding-left: 1rem;
+}
+
+.nav_link {
+    background-color: var(--bg-lv-2);
+    backdrop-filter: blur(var(--bg-lv-2-blur));
+    margin: 1rem 0rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: var(--shadow);
+    transition: all .1s ease-in-out;
+}
+
+.nav_link:hover {
+    font-size: 1.6rem;
+}
+
+.nav_link:hover i {
+    filter: drop-shadow(0px 0px 4px #ffffff66);
+}
+
+#nav_btn_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 3rem);
+    grid-template-rows: 5rem;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+
+#nav_discord {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#nav_asset {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#nav_youtube {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+/* NAVBAR SETTINGS */
+
+
+
+
+#panel {
+    height: calc(100vh - 5rem);
+    padding: 1rem .5rem;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    box-shadow: var(--shadow);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.List {
+    background-color: var(--bg-lv-1);
+    backdrop-filter: blur(var(--bg-lv-1-blur));
+    width: 300px;
+    height: 600px;
+    max-height: calc(100vh - 7rem);
+    flex-shrink: 0;
+    border-radius: 1rem;
+    margin: 0 .5rem;
+    box-shadow: var(--shadow);
+}
