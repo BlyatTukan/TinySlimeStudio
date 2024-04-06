@@ -1,9 +1,11 @@
 :root {
     --bg-lv-1: #00000088;
-    --bg-lv-1-blur: 2px;
+    --bg-lv-1-blur: 10px;
 
     --bg-lv-2: #16161644;
-    --bg-lv-2-blur: 2px;
+    --bg-lv-2-blur: 10px;
+
+    --task-bg: #424242aa;
 
     --shadow: 0px 0px 8px #00000088;
     --shadow-hover: 0px 0px 12px #000000aa;
@@ -34,7 +36,8 @@
 
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url(../Image/HellishBattleCover.webp);
-
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -140,9 +143,6 @@ nav {
     display: flex;
     flex-direction: row;
     overflow-x: auto;
-    box-shadow: var(--shadow);
-    background-position: center;
-    background-size: cover;
 }
 
 
@@ -156,4 +156,15 @@ nav {
     border-radius: 1rem;
     margin: 0 .5rem;
     box-shadow: var(--shadow);
+    padding: .5rem;
+}
+
+.task {
+    background-color: var(--task-bg);
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+}
+
+.badge {
+    font-size: .8rem;
 }
