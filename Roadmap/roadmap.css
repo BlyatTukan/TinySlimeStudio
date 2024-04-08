@@ -1,11 +1,14 @@
+@font-face {
+    font-family: UpheavalPro;
+    src: url(../UpheavalPro.ttf);
+  }
+
 :root {
-    --bg-lv-1: #00000088;
-    --bg-lv-1-blur: 10px;
+    --bg-lv-1: #00000099;
+    --bg-lv-1-blur: 6px;
 
-    --bg-lv-2: #16161644;
-    --bg-lv-2-blur: 10px;
-
-    --task-bg: #424242aa;
+    --bg-lv-2: #0000006;
+    --bg-lv-2-blur: 2px;
 
     --shadow: 0px 0px 8px #00000088;
     --shadow-hover: 0px 0px 12px #000000aa;
@@ -30,22 +33,22 @@
     margin: 0;
     padding: 0;
     color: #eee;
-    font-family: 'Cube Cavern';
+    font-family: 'UpheavalPro';
     box-sizing: border-box;
+    letter-spacing: 1px;
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url(../Image/HellishBattleCover.webp);
-    background-position: center;
-    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url(../Image/HellishBattleCover.webp);
 }
 
 
 
 /* NAVBAR SETTINGS */
 nav {
-    background-color: var(--bg-lv-1);
-    backdrop-filter: blur(var(--bg-lv-1-blur));
+    backdrop-filter: blur(8px) saturate(150%);
+    -webkit-backdrop-filter: blur(8px) saturate(150%);
+    background-color: rgba(0, 0, 0, 0.66);
 
     height: 5rem;
     display: grid;
@@ -84,7 +87,7 @@ nav {
 
 #nav_name #nav_desc {
     font-size: 1rem;
-    margin-top: -0.5rem;
+    margin-top: -0.3rem;
     margin-bottom: 0.5rem;
     color: #aaa;
     padding-left: 1rem;
@@ -143,28 +146,146 @@ nav {
     display: flex;
     flex-direction: row;
     overflow-x: auto;
+    box-shadow: var(--shadow);
+    background-position: center;
+    background-size: cover;
 }
 
 
 .List {
-    background-color: var(--bg-lv-1);
-    backdrop-filter: blur(var(--bg-lv-1-blur));
-    width: 300px;
-    height: 600px;
+    backdrop-filter: blur(8px) saturate(150%);
+    -webkit-backdrop-filter: blur(8px) saturate(150%);
+    background-color: rgba(0, 0, 0, 0.66);
+
+    width: 20rem;
+    
     max-height: calc(100vh - 7rem);
     flex-shrink: 0;
     border-radius: 1rem;
     margin: 0 .5rem;
     box-shadow: var(--shadow);
-    padding: .5rem;
+    padding: 1rem;
+    
+    overflow-x: auto;
 }
 
-.task {
-    background-color: var(--task-bg);
-    padding: .5rem 1rem;
+.List_Title{
+    font-size: 1.2rem;
+    margin-left: .5rem;
+    margin-bottom: 1rem;
+}
+
+.element{
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cover_element{
+    border-radius: 1rem;
+    margin-bottom: 1rem; 
+    position: relative;
+}
+
+.cover_element img{
     border-radius: 1rem;
 }
 
-.badge {
-    font-size: .8rem;
+.cover_element div{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 100%);
+    text-align: center;
+    
+    vertical-align: middle;
+    flex-direction: column-reverse;
+    display: flex;
+    font-size: 1.5rem;
+    padding: .5rem;
 }
+
+.category{
+    margin-bottom: .5rem;
+    display: inline-block;
+    padding: .25rem .5rem;
+    font-size: .7rem;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .5rem;
+    background-color: #ffffff44;
+    color: white;
+    border: 1px solid white;
+}
+
+.badge{
+    margin-top: .5rem;
+    display: inline-block;
+    padding: .2rem .8rem;
+    font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .5rem;
+    background-color: #ffffff33;
+    color: white;
+    border: 1px solid white;
+}
+
+.yellow{
+    background-color: #F0C80833;
+    color: #F0C808 !important;
+    border: 1px solid #F0C808;
+}
+.yellow *{color: #F0C808 !important;}
+
+.element h1{
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.element h3{
+    font-weight: 500;
+    color: #ccc;
+    font-size: .7rem;
+}
+.progress{
+    width: 100%;
+    height: 1rem;
+    background-color: #ffffff33;
+    color: white;
+    border: 1px solid white;
+border-radius: 1rem;
+margin: .5rem 0;
+}
+.progress_fill{
+    width: 100%;
+    height: 100%;
+background-color: white;
+border-radius: 1rem;
+}
+
+.progress p{
+text-align: center;
+vertical-align: middle;
+margin-top: -1rem;
+height: 1rem;
+color: #999;
+}
+
+ul {
+    list-style: none;
+  }
+  li{
+    font-size: .8rem;
+    padding-left: 1rem;
+  }
