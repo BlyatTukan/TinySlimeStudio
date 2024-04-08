@@ -1,7 +1,7 @@
 @font-face {
     font-family: UpheavalPro;
     src: url(../UpheavalPro.ttf);
-  }
+}
 
 :root {
     --bg-lv-1: #00000099;
@@ -15,17 +15,18 @@
 }
 
 ::-webkit-scrollbar {
-    height: 16px;
+    height: .5rem;
+    width: .5rem;
     background: transparent;
 }
 
 ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0);
     backdrop-filter: blur(10px);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #1a644e, #40985e);
+    background: #ffffff33;
     border-radius: 12px;
 }
 
@@ -158,59 +159,60 @@ nav {
     background-color: rgba(0, 0, 0, 0.66);
 
     width: 20rem;
-    
+
     max-height: calc(100vh - 7rem);
     flex-shrink: 0;
     border-radius: 1rem;
     margin: 0 .5rem;
     box-shadow: var(--shadow);
-    padding: 1rem;
-    
+    padding: .5rem;
+
     overflow-x: auto;
 }
 
-.List_Title{
+.List_Title {
     font-size: 1.2rem;
     margin-left: .5rem;
     margin-bottom: 1rem;
+    margin-top: .5rem;
 }
 
-.element{
+.element {
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
 
     border-radius: 1rem;
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
-.cover_element{
+.cover_element {
     border-radius: 1rem;
-    margin-bottom: 1rem; 
+    margin-bottom: .5rem;
     position: relative;
 }
 
-.cover_element img{
+.cover_element img {
     border-radius: 1rem;
 }
 
-.cover_element div{
+.cover_element div {
     position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
     border-radius: 1rem;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 100%);
     text-align: center;
-    
+
     vertical-align: middle;
     flex-direction: column-reverse;
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: .5rem;
 }
 
-.category{
+.category {
     margin-bottom: .5rem;
     display: inline-block;
     padding: .25rem .5rem;
@@ -225,7 +227,7 @@ nav {
     border: 1px solid white;
 }
 
-.badge{
+.badge {
     margin-top: .5rem;
     display: inline-block;
     padding: .2rem .8rem;
@@ -240,52 +242,174 @@ nav {
     border: 1px solid white;
 }
 
-.yellow{
-    background-color: #F0C80833;
-    color: #F0C808 !important;
-    border: 1px solid #F0C808;
-}
-.yellow *{color: #F0C808 !important;}
-
-.element h1{
+.element h1 {
     font-weight: 500;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
-.element h3{
+.element h3 {
     font-weight: 500;
     color: #ccc;
     font-size: .7rem;
 }
-.progress{
+
+/* Progress Bar */
+.progress {
     width: 100%;
-    height: 1rem;
+    height: 1.5rem;
     background-color: #ffffff33;
     color: white;
     border: 1px solid white;
-border-radius: 1rem;
-margin: .5rem 0;
-}
-.progress_fill{
-    width: 100%;
-    height: 100%;
-background-color: white;
-border-radius: 1rem;
+    border-radius: .5rem;
+    margin: .5rem 0;
 }
 
-.progress p{
-text-align: center;
-vertical-align: middle;
-margin-top: -1rem;
-height: 1rem;
-color: #999;
+.progress_fill {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: .5rem;
 }
+
+.progress p {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: -1.4rem;
+    height: 1.5rem;
+    font-size: 1.3rem;
+    color: #999;
+}
+
+/* Progress Bar */
 
 ul {
     list-style: none;
-  }
-  li{
+}
+
+li {
     font-size: .8rem;
     padding-left: 1rem;
-  }
+}
+
+
+
+/* BADGE AND CATEGORY COLORS */
+.yellow {
+    background-color: #F0C80833;
+    color: #F0C808 !important;
+    border: 1px solid #F0C808;
+}
+
+.yellow * {
+    color: #F0C808;
+}
+
+.yellow .progress_fill {
+    background-color: #F0C808;
+}
+
+.yellow.progress p {
+    color: white !important;
+}
+
+
+.red {
+    background-color: #BA1F3333;
+    color: #BA1F33 !important;
+    border: 1px solid #BA1F33;
+}
+
+.red * {
+    color: #BA1F33 !important;
+}
+
+.red .progress_fill {
+    background-color: #BA1F33;
+}
+
+.red.progress p {
+    color: white !important;
+}
+
+
+
+.green {
+    background-color: #40985e33;
+    color: #40985e !important;
+    border: 1px solid #40985e;
+}
+
+.green * {
+    color: #40985e !important;
+}
+
+.green .progress_fill {
+    background-color: #40985e;
+}
+
+.green.progress p {
+    color: white !important;
+}
+
+
+
+.blue {
+    background-color: #51E5FF33;
+    color: #51E5FF !important;
+    border: 1px solid #51E5FF;
+}
+
+.blue * {
+    color: #51E5FF !important;
+}
+
+.blue .progress_fill {
+    background-color: #51E5FF;
+}
+
+.blue.progress p {
+    color: white !important;
+}
+
+
+
+.purple {
+    background-color: #9354C933;
+    color: #9354C9 !important;
+    border: 1px solid #9354C9;
+}
+
+.purple * {
+    color: #9354C9 !important;
+}
+
+.purple .progress_fill {
+    background-color: #9354C9;
+}
+
+.purple.progress p {
+    color: white !important;
+}
+
+
+
+.orange {
+    background-color: #F6511D33;
+    color: #F6511D !important;
+    border: 1px solid #F6511D;
+}
+
+.orange * {
+    color: #F6511D !important;
+}
+
+.orange .progress_fill {
+    background-color: #BA1F33;
+}
+
+.orange.progress p {
+    color: white !important;
+}
+
+/* BADGE AND CATEGORY COLORS */
