@@ -1,136 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-		<title>Tiny Slime Studio</title>
-		<meta name="description" content="I am a young nineteen-year-old programmer creating simple but working game prototypes" />
-		<meta name="keywords" content="Tiny Slime, Tiny Slime Studio, Hellish Battle, Retro FPS, Doom, Meet and talk, Loot Table, Draw The LIne, Unity, Assets, Unity Assets" />
-		<meta name="author" content="Tiny Slime Studio" />
+<html lang="en" dir="ltr">
 
-		<link rel="stylesheet" href="style.css" />
-		<script src="https://kit.fontawesome.com/f914c1df03.js" crossorigin="anonymous"></script>
-	</head>
-	<body style="background-image: url(./Image/Background.webp)">
-		<nav>
-			<div id="logo"></div>
-			<h4 id="logo_text">Tiny SLime Studio</h4>
-			<h5 id="logo_desc">Game Developer</h5>
-			<a href="https://assetstore.unity.com/publishers/63085" id="asset-store" target="_blank"><i class="fa-brands fa-unity"></i>Asset Store</a>
-		</nav>
+  
+<!-- Mirrored from mixdesign.club/themeforest/hintio/index-fullscreen-image.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Aug 2024 11:08:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
 
-		<!-- Hellish Battle -->
-		<div id="HellishBattle" class="main" style="background-image: url(Image/HellishBattleCover.webp)">
-			<div class="game_title">
-				<p class="title">Hellish Battle</p>
-				<p class="subtitle">2.5D Retro FPS</p>
-			</div>
+    <!-- Page Title-->
+    <title>Tiny Slime Studio | Website</title>
 
-			<p class="version_text">Version: 2.4.0a</p>
-			<p class="price_text">9.99$</p>
+    <!-- Meta Tags-->
+    <meta name="description" content="Tiny Slime Studio | Website">
+    <meta name="keywords" content="Tiny Slime Studio, Slime Studio, Hellish Battle, Meet and Talk, Avatar Creator">
+    <meta name="author" content="mix_design">
 
-			<button class="left_btn" onclick="DrawTheLine()"><i class="fa-solid fa-arrow-left"></i></button>
-			<button class="right_btn" onclick="MeetAndTalk()"><i class="fa-solid fa-arrow-right"></i></button>
+    <!-- Viewport Meta-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-			<span class="button_list">
-				<a href="https://trello.com/b/LLsG1tUJ/hellish-battle-25d-retro-fps-game-template" class="trailer_page" target="_blank">Roadmap<i class="fa-brands fa-trello"></i></a>
-				<a href="" class="demo_page" target="_blank">Demo<i class="fa-solid fa-gamepad"></i></a>
-				<a href="https://u3d.as/2Nyc" class="store_page" target="_blank">Store<i class="fa-brands fa-unity"></i></a>
-			</span>
-		</div>
+    <!-- Template Favicon & Icons Start -->
+		<link href="img/favicon//favicon.png" rel="icon" />
+    <!-- Template Favicon & Icons End -->
 
-		<!-- Meet and Talk -->
-		<div id="MeetAndTalk" class="main" style="background-image: url(Image/MeetAndTalk_Background.webp)">
-			<div class="game_title">
-				<p class="title">Meet and Talk</p>
-				<p class="subtitle">Dialogue System</p>
-			</div>
+    <!-- Facebook Metadata Start -->
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:title" content="Tiny Slime Studio | Website">
+    <meta property="og:description" content="Tiny Slime Studio | Website | Coming Soon">
+    <meta property="og:url" content="https://blyattukan.github.io/TinySlimeStudio/">
+    <meta property="og:image" content="img/favicon/og-image.jpg">
+    <!-- Facebook Metadata End -->
 
-			<p class="version_text">Version: 1.5.0a</p>
-			<p class="price_text">Free / 4.99$</p>
+    <!-- Template Styles Start -->
+    <link rel="stylesheet" type="text/css" href="css/loaders/loader.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Template Styles End -->
 
-			<button class="left_btn" onclick="HellishBattle()"><i class="fa-solid fa-arrow-left"></i></button>
-			<button class="right_btn" onclick="LootTable()"><i class="fa-solid fa-arrow-right"></i></button>
+    <!-- Custom Browser Color Start -->
+    <meta name="theme-color" content="#e51743">
+    <meta name="msapplication-navbutton-color" content="#e51743">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#e51743">
+    <!-- Custom Browser Color End -->
 
-			<span class="button_list">
-				<a href="https://trello.com/b/PesaRufS/meet-and-talk-dialogue-system" class="trailer_page" target="_blank">Roadmap<i class="fa-brands fa-trello"></i></a>
-				<a href="https://u3d.as/30sy" class="demo_page" target="_blank">Full Version<i class="fa-brands fa-unity"></i></a>
-				<a href="https://u3d.as/30vK" class="store_page" target="_blank">Free Version<i class="fa-brands fa-unity"></i></a>
-			</span>
-		</div>
+  </head>
 
-		<!-- Loot Table -->
-		<div id="LootTable" class="main" style="background-image: url(/Image/LootTable.Webp)">
-			<div class="game_title">
-				<p class="title">Loot Table</p>
-				<p class="subtitle">Universal Loot System</p>
-			</div>
+  <style>
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
 
-			<p class="version_text">Version: 2.0.0a</p>
-			<p class="price_text">Free</p>
+  </style>
 
-			<button class="left_btn" onclick="MeetAndTalk()"><i class="fa-solid fa-arrow-left"></i></button>
-			<button class="right_btn" onclick="DrawTheLine()"><i class="fa-solid fa-arrow-right"></i></button>
+  <body class="main-fullscreen">
 
-			<span class="button_list">
-				<a href="https://u3d.as/2VXG" class="store_page" target="_blank">Store<i class="fa-brands fa-unity"></i></a>
-			</span>
-		</div>
+    <!-- Custom HTML Start -->
 
-		<!-- Draw The Line -->
-		<div id="DrawTheLine" class="main" style="background-image: url(Image/DrawTheLine.Webp)">
-			<div class="game_title">
-				<p class="title">Draw The Line</p>
-				<p class="subtitle">Game Template</p>
-			</div>
+    <!-- Loader Start -->
+    <div class="loader">
+      <div class="loader__container">
+        <div class="loader__content">
+          <div class="loader__text">
+            <!-- Your Text Here -->
+            <span class="outline-colored">Coming soon</span>
+            <span class="outline-colored">Coming soon</span>
+            <span class="outline-colored">Coming soon</span>
+          </div>
+        </div>
+        <div class="loader__caption">
+          <p>Tiny Slime Studio | Website
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Loader End -->
 
-			<p class="version_text">Version: 1.0.0a</p>
-			<p class="price_text">4.99$</p>
+    <!-- Main Screen Slider Section Start -->
+    <section id="main" class="main fullscreen transparent" style="transform: scale(0.9);">
+      <div class="fullscreen-wrapper">
 
-			<button class="left_btn" onclick="LootTable()"><i class="fa-solid fa-arrow-left"></i></button>
-			<button class="right_btn" onclick="HellishBattle()"><i class="fa-solid fa-arrow-right"></i></button>
+        <!-- Fullscreen Background Start-->
+        <div class="fullscreen-bg fullscreen-bg-1">
+          <!-- Dark gradient cover layer -->
+          <div class="color-layer color-layer-medium"></div>
+        </div>
+        <!-- Fullscreen Background End-->
 
-			<span class="button_list">
-				<a href="https://u3d.as/2M29" class="store_page" target="_blank">Store<i class="fa-brands fa-unity"></i></a>
-			</span>
-		</div>
+        <!-- Header Start -->
+        <div class="main__header">
 
-		<p class="footer">Tiny Slime Studio | 2022 - 2024</p>
+          <!-- Logo Start -->
+          <div class="header__logo">
+            <!-- Your Logo Here -->
+            <img src="img/logo.png" alt="">
+          </div>
+          <!-- Logo End -->
 
-		<script>
-			function HellishBattle() {
-				document.getElementById("HellishBattle").style.display = "block";
-				document.getElementById("MeetAndTalk").style.display = "none";
-				document.getElementById("LootTable").style.display = "none";
-				document.getElementById("DrawTheLine").style.display = "none";
-			}
+          <a href="https://assetstore.unity.com/publishers/63085" class="notify-trigger-top top-right-trigger link-s">
+            <i class="fa-solid fa-bell"></i>
+            <span class="caption">Asset Store</span>
+          </a>
 
-			function MeetAndTalk() {
-				document.getElementById("HellishBattle").style.display = "none";
-				document.getElementById("MeetAndTalk").style.display = "block";
-				document.getElementById("LootTable").style.display = "none";
-				document.getElementById("DrawTheLine").style.display = "none";
-			}
+        </div>
+        <!-- Header End -->
 
-			function LootTable() {
-				document.getElementById("HellishBattle").style.display = "none";
-				document.getElementById("MeetAndTalk").style.display = "none";
-				document.getElementById("LootTable").style.display = "block";
-				document.getElementById("DrawTheLine").style.display = "none";
-			}
+        <div class="container-fluid p-0 fullheight-mobile">
+          <div class="row g-0 fullheight-mobile">
 
-			function DrawTheLine() {
-				document.getElementById("HellishBattle").style.display = "none";
-				document.getElementById("MeetAndTalk").style.display = "none";
-				document.getElementById("LootTable").style.display = "none";
-				document.getElementById("DrawTheLine").style.display = "block";
-			}
+            <!-- Main Section Intro Start -->
+            <div class="col-12 main__intro fullheight-mobile">
 
-			window.onload = function () {
-				HellishBattle();
-			};
-		</script>
-	</body>
+              <!-- Intro Content Start -->
+              <div class="intro__content fullheight-mobile">
+
+                <!-- Headline Start -->
+                <div id="headline" class="headline center">
+                  <h1 class="large"><span class="outline-white">Coming soon</span></h1>
+                  <div class="headline__countdownholder">
+
+                    <!-- Countdown Start-->
+                    <div class="countdown countdown-headline">
+                      <span class="help-text">Tiny Slime Studio Website</span>
+                    </div>
+                    <!-- Countdown End-->
+
+                  </div>
+                </div>
+                <!-- Headline End -->
+
+              </div>
+              <!-- Intro Content End -->
+
+            </div>
+            <!-- Main Section Intro End -->
+
+            <!-- Explore Button Start -->
+            <div class="intro__explore absolute">
+              <a  class="explore vertical animated link-s" style="text-align: center;">
+                
+                <span>Loot Table</span>
+                <span>Draw The Line</span>
+                <span>Meet and Talk</span>
+                <span>Hellish Battle</span>
+                <span>Avatar Creator</span>
+              </a>
+            </div>
+            <!-- Explore Button End -->
+
+            <!-- Socials Start -->
+            <div class="socials bottom-left">
+              <ul>
+                <li>
+                  <a href="https://discord.com/invite/KtHKbYjBMS" class="link-s" target="_blank">Discord</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/@TinySlimeStudio" class="link-s" target="_blank">Youtube</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Socials End -->
+
+            <!-- Copyright Start -->
+              <div class="copyright">
+                <p><br>See you Soon!</p>
+              </div>
+              <!-- Copyright End -->
+
+          </div>
+        </div>
+
+        <!-- Scale Out Animation Hover Layer Start -->
+        <div class="main__hover"></div>
+        <!-- Scale Out Animation Hover Layer End -->
+
+      </div>
+    </section>
+    <!-- Main Screen Slider Section End -->
+
+    <!-- Custom HTML End -->
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+      <!-- Background of PhotoSwipe.
+      It's a separate element, as animating opacity is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+          <div class="pswp__top-bar">
+
+            <!--  Controls are self-explanatory. Order can be changed. -->
+
+            <div class="pswp__counter"></div>
+
+            <button class="pswp__button pswp__button--close link-s" title="Close (Esc)"></button>
+
+            <button class="pswp__button pswp__button--share link-s" title="Share"></button>
+
+            <button class="pswp__button pswp__button--fs link-s" title="Toggle fullscreen"></button>
+
+            <button class="pswp__button pswp__button--zoom link-s" title="Zoom in/out"></button>
+
+            <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+            <!-- element will get class pswp__preloader-active when preloader is running -->
+            <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+            </div>
+          </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left link-s" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right link-s" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Load Scripts Start -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/gallery-init.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/maps/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNMDtmEsvSevM4ztfsbhLfLNZhKHCvWXk"></script>
+    <!-- Load Scripts End -->
+
+  </body>
+
+
+<!-- Mirrored from mixdesign.club/themeforest/hintio/index-fullscreen-image.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Aug 2024 11:08:55 GMT -->
 </html>
